@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #app {
+    }
+    .header {
+      height: 250px;
+      background-color: aquamarine;
+      color: #fff;
+      font-size: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .list {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      margin: 20px auto 0;
+    }
+    .list li {
+      width: 300px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: chartreuse;
+      font-size: 40px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .list li a {
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      canvas demo
+    </div>
+    <ul class="list">
+      <li>
+        <a href="./paperCutting/paperCutting.html"> 剪影 </a>
+      </li>
+      <li >
+        <a href="./clock/clock.html"> 时钟 </a>
+      </li>
+      <li href="./tetris/tetris.html">
+        <a href="./clock/clock.html"> 俄罗斯方块 </a>
+      </li>
+    </ul>
+  </div>
+</body>
+  <script src="./index.js"></script>
+</html>
