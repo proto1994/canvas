@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>
+      canvas
+    </title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #ddd;
+    }
+    #canvas {
+      margin: 10px;
+      width: 600px;
+      height: 600px;
+    }
+  </style>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script src="./common/setupCanvas.js"></script>
+    <script>
+      const canvas = document.querySelector('#canvas');
+      let ctx = setupCanvas(canvas);
+
+      // ctx.fillStyle = '#fff';
+      // ctx.lineWidth = 1;
+      // ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+      // ctx.strokeRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+
+      ctx.beginPath();
+      ctx.fillStyle = '#000';
+      ctx.arc(50, 50, 30, 0, Math.PI * 2, true);
+      ctx.fill();
+
+      // ctx.font = '38pt Arial';
+      // ctx.fillStyle = 'cornflowerblue';
+      // ctx.strokeStyle = 'blue';
+
+      // ctx.fillText('Hello Canvas', CANVAS_WIDTH / 2 - 150, CANVAS_HEIGHT / 2 + 15);
+
+      // ctx.strokeText('Hello Canvas', CANVAS_WIDTH / 2 - 150, CANVAS_HEIGHT / 2 + 15);
+    </script>
+  </body>
+</html>
